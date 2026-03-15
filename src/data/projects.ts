@@ -33,12 +33,12 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   },
   {
     index: 2,
-    title: "Kanban",
+    title: "CodeSync",
     href: "/projects",
-    tags: ["Reactjs", "Vite", "Tailwindcss", "Vercel", "Zustand", "React DND"],
+    tags: ["React", "Collaborative", "IDE", "TailwindCSS"],
     image: {
-      LIGHT: "/images/projects/kanbanLight.webp",
-      DARK: "/images/projects/kanbanDark.webp",
+      LIGHT: "/images/projects/codeSyncLight.webp",
+      DARK: "/images/projects/codeSyncDark.webp",
     },
   },
 ];
@@ -57,17 +57,16 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     liveWebsiteHref: "https://jsontree.vercel.app",
   },
   {
-    name: "Kanban app",
-    favicon: "/images/projects/logos/kanban.ico",
+    name: "CodeSync",
+    favicon: "/images/projects/logos/codesync.ico",
     imageUrl: [
-      "/images/projects/kanbanLight.webp",
-      "/images/projects/kanbanDark.webp",
-      "/images/projects/kanbanCardLight.webp",
+      "/images/projects/codeSyncLight.webp",
+      "/images/projects/codeSyncDark.webp",
     ],
     description:
-      "Keep track of projects and tasks in different categories. Drag and drop card from tables. Assign user and priority to task and many more features. This app is made using Reactjs, Typescript, Tailwindcss and React-beautiful-dnd library.",
-    sourceCodeHref: "https://github.com/alokkksharmaa/kanban",
-    liveWebsiteHref: "https://kannban-board.vercel.app",
+      "⚡ CodeSync — Pro Real-time Collaborative IDE. Build, share, and collaborate on code with instant synchronization, live activity monitoring, and enterprise-grade performance.",
+    sourceCodeHref: "https://github.com/alokkksharmaa",
+    liveWebsiteHref: "https://codesync.vercel.app",
   },
   {
     name: "Many Games",

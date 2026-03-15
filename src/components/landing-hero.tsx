@@ -1,36 +1,27 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 
-import { AnimatePresence, motion } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 
 import FadeUp from "@/animation/fade-up";
 
 export default function LandingHero() {
-  const [scrollY, setScrollY] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
 
-  let progress = 0;
-  const { current: elContainer } = ref;
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
 
-  if (elContainer) {
-    progress = Math.min(1, scrollY / elContainer.clientHeight);
-  }
-
-  const handleScroll = () => {
-    setScrollY(window.scrollY);
-  };
-
-  useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
-
-    return () => document.removeEventListener("scroll", handleScroll);
-  }, []);
+  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "20vh"]);
 
   return (
     <motion.section
-      animate={{
-        transform: `translateY(${progress * 20}vh)`,
-      }}
-      transition={{ type: "spring", stiffness: 100 }}
+      style={{ y }}
       ref={ref}
       className="pointer-events-none flex max-h-[1000px] min-h-[calc(100vh-200px)] items-center px-6 sm:px-14 md:h-[calc(100vh-200px)] md:min-h-max md:px-20"
     >
