@@ -9,6 +9,8 @@ import { classNames } from "@/utility/classNames";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
+  display: "swap",
+  fallback: ["sans-serif"],
 });
 
 export interface MainLayoutProps {
