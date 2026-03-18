@@ -18,7 +18,7 @@ export default function PdfThumbnail({ src, width = 400 }: Props) {
   if (error) {
     // Fallback: simple styled placeholder
     return (
-      <div className="flex absolute inset-0 w-full h-full items-center justify-center bg-zinc-100 dark:bg-zinc-800">
+      <div className="absolute inset-0 flex h-full w-full items-center justify-center bg-zinc-100 dark:bg-zinc-800">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
