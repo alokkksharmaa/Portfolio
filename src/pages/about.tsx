@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 
 import AboutHero from "@/components/about-hero";
 import CVSection from "@/components/cv-section";
+import AchievementsSection from "@/components/achievements-section";
 import { EXPERIENCE } from "@/data/experience";
 import { EDUCATION } from "@/data/education";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
@@ -47,6 +48,7 @@ export default function About() {
       />
       <AboutHero />
       <CVSection />
+      <AchievementsSection />
       <ExperienceShowcaseList title="Experience" details={EXPERIENCE} />
       <ExperienceShowcaseList title="Education" details={EDUCATION} />
     </>
