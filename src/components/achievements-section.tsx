@@ -109,8 +109,12 @@ export default function AchievementsSection() {
 
                 {/* Info */}
                 <div className="ach-body">
-                  <div className="ach-result text-zinc-800 dark:text-zinc-200">{ach.result}</div>
-                  <div className="ach-title text-zinc-900 dark:text-zinc-100">{ach.title}</div>
+                  <div className="ach-result text-zinc-800 dark:text-zinc-200">
+                    {ach.result}
+                  </div>
+                  <div className="ach-title text-zinc-900 dark:text-zinc-100">
+                    {ach.title}
+                  </div>
 
                   <div className="ach-row mt-1">
                     <span className="ach-tag text-zinc-600 dark:text-zinc-400">
@@ -157,13 +161,21 @@ export default function AchievementsSection() {
 
                   <div className="ach-meta-row">
                     <span className="ach-meta-item">
-                      <span className="ach-meta-label text-zinc-500 dark:text-zinc-400">Issued</span>
-                      <span className="ach-meta-value text-zinc-800 dark:text-zinc-200">{ach.issued}</span>
+                      <span className="ach-meta-label text-zinc-500 dark:text-zinc-400">
+                        Issued
+                      </span>
+                      <span className="ach-meta-value text-zinc-800 dark:text-zinc-200">
+                        {ach.issued}
+                      </span>
                     </span>
                     {ach.expires && (
                       <span className="ach-meta-item">
-                        <span className="ach-meta-label text-zinc-500 dark:text-zinc-400">Expires</span>
-                        <span className="ach-meta-value text-zinc-800 dark:text-zinc-200">{ach.expires}</span>
+                        <span className="ach-meta-label text-zinc-500 dark:text-zinc-400">
+                          Expires
+                        </span>
+                        <span className="ach-meta-value text-zinc-800 dark:text-zinc-200">
+                          {ach.expires}
+                        </span>
                       </span>
                     )}
                   </div>

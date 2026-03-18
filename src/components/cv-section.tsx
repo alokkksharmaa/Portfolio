@@ -73,8 +73,12 @@ export default function CVSection() {
                       </svg>
                     </div>
                     <div>
-                      <p className="cv-filename text-zinc-900 dark:text-zinc-100">{cv.filename}</p>
-                      <p className="cv-filetype text-zinc-600 dark:text-zinc-400">PDF Document</p>
+                      <p className="cv-filename text-zinc-900 dark:text-zinc-100">
+                        {cv.filename}
+                      </p>
+                      <p className="cv-filetype text-zinc-600 dark:text-zinc-400">
+                        PDF Document
+                      </p>
                     </div>
                   </div>
 
