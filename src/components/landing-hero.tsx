@@ -59,9 +59,9 @@ export default function LandingHero() {
                       <Image
                         src="/images/profile.png"
                         alt="Alok Kumar - Profile"
-                        width={500}
-                        height={500}
+                        fill
                         className="profile-circle-img"
+                        unoptimized
                         priority
                       />
                     </div>

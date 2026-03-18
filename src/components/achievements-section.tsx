@@ -102,7 +102,6 @@ export default function AchievementsSection() {
                         alt={`${ach.title} thumbnail`}
                         fill
                         className="object-cover"
-                        unoptimized
                       />
                     </div>
                   )}
@@ -110,11 +109,11 @@ export default function AchievementsSection() {
 
                 {/* Info */}
                 <div className="ach-body">
-                  <div className="ach-result">{ach.result}</div>
-                  <div className="ach-title">{ach.title}</div>
+                  <div className="ach-result text-zinc-800 dark:text-zinc-200">{ach.result}</div>
+                  <div className="ach-title text-zinc-900 dark:text-zinc-100">{ach.title}</div>
 
-                  <div className="ach-row">
-                    <span className="ach-tag">
+                  <div className="ach-row mt-1">
+                    <span className="ach-tag text-zinc-600 dark:text-zinc-400">
                       <svg
                         viewBox="0 0 24 24"
                         fill="none"
@@ -132,7 +131,7 @@ export default function AchievementsSection() {
                   </div>
 
                   <div className="ach-row">
-                    <span className="ach-tag">
+                    <span className="ach-tag text-zinc-600 dark:text-zinc-400">
                       <svg
                         viewBox="0 0 24 24"
                         fill="none"
@@ -158,21 +157,21 @@ export default function AchievementsSection() {
 
                   <div className="ach-meta-row">
                     <span className="ach-meta-item">
-                      <span className="ach-meta-label">Issued</span>
-                      <span className="ach-meta-value">{ach.issued}</span>
+                      <span className="ach-meta-label text-zinc-500 dark:text-zinc-400">Issued</span>
+                      <span className="ach-meta-value text-zinc-800 dark:text-zinc-200">{ach.issued}</span>
                     </span>
                     {ach.expires && (
                       <span className="ach-meta-item">
-                        <span className="ach-meta-label">Expires</span>
-                        <span className="ach-meta-value">{ach.expires}</span>
+                        <span className="ach-meta-label text-zinc-500 dark:text-zinc-400">Expires</span>
+                        <span className="ach-meta-value text-zinc-800 dark:text-zinc-200">{ach.expires}</span>
                       </span>
                     )}
                   </div>
 
                   {ach.credentialId !== "—" && (
-                    <p className="ach-credential">
+                    <p className="ach-credential text-zinc-600 dark:text-zinc-400">
                       ID:{" "}
-                      <span className="ach-credential-value">
+                      <span className="ach-credential-value text-zinc-800 dark:text-zinc-200">
                         {ach.credentialId}
                       </span>
                     </p>
@@ -275,7 +274,6 @@ export default function AchievementsSection() {
           font-size: 0.78rem;
           font-weight: 700;
           letter-spacing: 0.03em;
-          color: #e4e4e7;
         }
         .ach-title {
           font-size: 0.95rem;
@@ -293,7 +291,6 @@ export default function AchievementsSection() {
           gap: 0.3rem;
           font-size: 0.7rem;
           font-weight: 500;
-          color: #a1a1aa;
           line-height: 1.4;
         }
         .ach-tag-icon {
@@ -317,22 +314,18 @@ export default function AchievementsSection() {
           font-size: 0.6rem;
           text-transform: uppercase;
           letter-spacing: 0.07em;
-          color: #71717a;
           font-weight: 600;
         }
         .ach-meta-value {
           font-size: 0.75rem;
           font-weight: 600;
-          color: #d4d4d8;
         }
         .ach-credential {
           font-size: 0.65rem;
-          color: #71717a;
           margin: 0;
           word-break: break-all;
         }
         .ach-credential-value {
-          color: #a1a1aa;
           font-weight: 600;
         }
 

@@ -73,8 +73,8 @@ export default function CVSection() {
                       </svg>
                     </div>
                     <div>
-                      <p className="cv-filename">{cv.filename}</p>
-                      <p className="cv-filetype">PDF Document</p>
+                      <p className="cv-filename text-zinc-900 dark:text-zinc-100">{cv.filename}</p>
+                      <p className="cv-filetype text-zinc-600 dark:text-zinc-400">PDF Document</p>
                     </div>
                   </div>
 
@@ -193,14 +193,12 @@ export default function CVSection() {
         .cv-filename {
           font-size: 0.95rem;
           font-weight: 600;
-          color: #e4e4e7;
           margin: 0;
           line-height: 1.4;
         }
 
         .cv-filetype {
           font-size: 0.75rem;
-          color: #a1a1aa;
           margin: 0;
           margin-top: 2px;
         }
